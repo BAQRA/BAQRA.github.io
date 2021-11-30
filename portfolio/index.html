@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levan's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Levan's Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
 <body>
     <header>
-        <button class="nav-toggle">
-            <span></span>
-            <p>nav</p>
-        </button>
         <nav class="nav">
-            <ul class="nav_list"> 
-                <li class="nav_item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav_item"><a href="#about_me" class="nav__link">About Me</a></li>
-                <li class="nav_item"><a href="#my_work" class="nav__link"> My work </a></li>
-                <li class="nav_item"><a href="#contacts" class="nav__link">Contacts </a></li>
+            <ul class="nav__list"> 
+                <li class="nav-left"> <a>LOGO</a> </li>
+                <li class="nav__item"><a href="#contacts" class="nav__link" >&lt; Contacts / &gt; </a></li>
+                <li class="nav__item"><a href="#my_work" class="nav__link"> &lt; Portfolio / &gt;</a></li>
+                <li class="nav__item"><a href="#about_me" class="nav__link"> &lt; About Me / &gt;</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link active"> &lt; home /  &gt; </a></li>
             </ul>
         </nav>
     </header>
-    <section class="home" id="home">
+    <!-- <section class="home" id="home">
         <h1>Hi I am Levan</h1>
     </section>
     <section class="about_me" id="about_me">
@@ -30,11 +32,8 @@
     </section>
     <section class="my_work" id="my_work">
         <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">Store made with Nodejs</p>
+            <p class="section__subtitle section__subtitle--work">Store made with Node.js</p>
         <div class="portfolio">
-            <!-- <a href="#" class="portfolio__item">
-                <img src="img/shop.jpg" alt="" class="portfolio__img">
-            </a> -->
             
             <a href="#" class="portfolio__item">
                 <img src="img/products.png" alt="" class="portfolio__img">
@@ -63,10 +62,6 @@
             <a href="#" class="portfolio__item">
                 <img src="img/signup.png" alt="" class="portfolio__img">
             </a>
-            
-            <!-- <a href="#" class="portfolio__item">
-                <img src="img/reset password.png" alt="" class="portfolio__img">
-            </a> -->
 
             <a href="#" class="portfolio__item">
                 <img src="img/add product.png" alt="" class="portfolio__img">
@@ -76,9 +71,7 @@
                 <img src="img/users database.png" alt="" class="portfolio__img">
             </a>
 
-            <!-- <a href="#" class="portfolio__item">
-                <img src="img/edit product.png" alt="" class="portfolio__img">
-            </a> -->
+            
         </div>
         <a href="https://github.com/BAQRA/BAQRA.github.io/tree/main/node%20shop" target="_blank" class="section__subtitle--work--git">Github Repository</a>
         <p class="section__subtitle section__subtitle--work-1">Burger Builder made with React</p>
@@ -100,9 +93,27 @@
             </a>     
         </div>
         <a href="https://github.com/BAQRA/BAQRA.github.io/tree/main/myburger" target="_blank" class="section__subtitle--work--bb--git">Github Repository</a>
-    </section>
+    </section> 
     <section class="contacts" id="contacts">
         <h1>Contact me</h1>
-    </section>
+    </section> -->
+
+    <!-- <footer class="footer">
+        <a href="mailto:hello@jane.dev" class="footer__link">levan.bakradze3@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/levan-bakradze-161012223" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/BAQRA" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer> -->
+
+    <script src="js/main.js"></script>
 </body>
 </html>
