@@ -8,3 +8,142 @@
     color: greenyellow;
     text-align: center;
 }
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #00695c;
+    --clr-accent-bb: #CF8F2E;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.my_work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--work {
+    color: #16e0bd;
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+    text-align: center;    
+}
+
+.section__subtitle--work-1 {
+    color: var(--clr-accent-bb);
+    font-weight: var(--fw-bold);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;    
+}
+
+.section__subtitle--work--git {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+    text-align: left;   
+}
+
+.section__subtitle--work--bb--git {
+    color: var(--clr-accent-bb);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+
+}
+
+.section__title {
+    margin-bottom: .25em;
+    text-align: center;   
+}
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__item-bb{
+    background: var(--clr-accent-bb);
+    overflow: hidden;
+}
+
+
+.portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .5;
+}
