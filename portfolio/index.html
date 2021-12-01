@@ -19,55 +19,68 @@
                 <li class="nav-left"> <a>LOGO</a> </li>
                 <li class="nav__item"><a href="#contacts" class="nav__link" >&lt; Contacts / &gt; </a></li>
                 <li class="nav__item"><a href="#my_work" class="nav__link"> &lt; Portfolio / &gt;</a></li>
-                <li class="nav__item"><a href="#about_me" class="nav__link"> &lt; About Me / &gt;</a></li>
+                <li class="nav__item"><a href="#about-me" class="nav__link"> &lt; About Me / &gt;</a></li>
                 <li class="nav__item"><a href="#home" class="nav__link active"> &lt; home /  &gt; </a></li>
             </ul>
         </nav>
     </header>
     <section class="home" id="home">
-        <h1 >Hi My Name Is Levan</h1>
+        <p class='elements-start'>&lt;h1&gt;</p>
+        <h1 class="glitch">Hello World</h1>
+        <p class='elements-end'>&lt;/h1&gt;</p>
     </section>
-    <section class="about_me" id="about_me">
-        <h1>I Am Web Developer</h1>
+    <section class="about-me" id="about-me">
+        <p class='elements-start'>&lt;h1&gt;</p>
+        <h1>I Am <span class="auto-input"></span></h1>
+        <p class='elements-end'>&lt;/h1&gt;</p>
+        <p class='elements-start'>&lt;p&gt;</p>
+        <div class="about-me__body" style="color: #d1d1d1;">
+            <span>Since the age of 15 (when I first started learning how to code) coding has been my passion. I first started with html, CSS, JavaScript and</span> 
+            <span> completed the first courses on <a href="#freecodecamp" style="text-decoration: none; color: #ffc300;">FreeCodeCamp</a> about Responsive Web Design and JavaScript Algorithms and Data Structures. Since then I </span>
+            <span>always wanted to improve, and learn as much about coding as possible, so I started learning <a style="color: #84ba64;" href="https://nodejs.org/en/">Node.js</a> and <a style="color: #61dafb;" href="https://reactjs.org/">React</a> on <a href="#udemy" style="text-decoration: none; color: #6cb4c4;">Udemy</a>.  I learned a lot</span>
+            <span> from those courses and made <a href="#my_work" style="text-decoration: none; color: #16e0bd;">personal projects</a> for practice. I love challenges and things that make you think and grow.</p></span>
+        </div>
+        <p class='elements-end'>&lt;/p&gt;</p>
     </section>
+    <p class='elements-start'>&lt;section&gt;</p>
     <section class="my_work" id="my_work">
         <h2 class="section__title section__title--work" style="color: white;">My work</h2>
             <p class="section__subtitle section__subtitle--work">Store made with Node.js</p>
         <div class="portfolio">
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/products.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/admin products.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/cart.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/orders.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/payment.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/login.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/signup.png" alt="" class="portfolio__img">
             </a>
 
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/add product.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item">
+            <a class="portfolio__item">
                 <img src="img/users database.png" alt="" class="portfolio__img">
             </a>
 
@@ -76,29 +89,54 @@
         <a href="https://github.com/BAQRA/BAQRA.github.io/tree/main/node%20shop" target="_blank" class="section__subtitle--work--git">Github Repository</a>
         <p class="section__subtitle section__subtitle--work-1">Burger Builder made with React</p>
         <div class="portfolio">
-            <a href="#" class="portfolio__item-bb">
+            <a class="portfolio__item-bb">
                 <img src="img/burgerbuilder.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item-bb">
+            <a class="portfolio__item-bb">
                 <img src="img/burgerbuilder add.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item-bb">
+            <a class="portfolio__item-bb">
                 <img src="img/burgerbuilder checkout.png" alt="" class="portfolio__img">
             </a>
             
-            <a href="#" class="portfolio__item-bb">
+            <a class="portfolio__item-bb">
                 <img src="img/burgerbuilder auth.png" alt="" class="portfolio__img">
             </a>     
         </div>
         <a href="https://github.com/BAQRA/BAQRA.github.io/tree/main/myburger" target="_blank" class="section__subtitle--work--bb--git">Github Repository</a>
     </section> 
-    <section class="contacts" id="contacts">
-        <h1>Contact me</h1>
-        <p style="color:#16e0bd;"> contact info goes here---------------------------------------------------------------------------------------------------- </p>
-    </section>
 
+    <section class="my_work">
+        <h2 class="section__title section__title--work" style="color: white;">Certificates</h2>
+        <p class="section__subtitle section__subtitle--work--udemy" id="udemy">Udemy</p>
+        <div class="portfolio">
+            <a href="https://www.udemy.com/certificate/UC-9Q2XZUQC/" class="portfolio__item--udemy" target="_blank">
+                <img src="img/react.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="https://www.udemy.com/certificate/UC-BE64T8E0/" class="portfolio__item--udemy" target="_blank">
+                <img src="img/node.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+        <p class="section__subtitle section__subtitle--work--freecodecamp" id="freecodecamp">FreeCodeCamp</p>
+        <div class="portfolio">
+            <a href="https://freecodecamp.org/certification/baqra/responsive-web-design" class="portfolio__item--freecodecamp" target="_blank">
+                <img src="img/responsive web design.png" alt="" class="portfolio__img">
+            </a>
+            <a href="https://freecodecamp.org/certification/baqra/javascript-algorithms-and-data-structures" class="portfolio__item--freecodecamp" target="_blank">
+                <img src="img/js algorithm and data structures.png" alt="" class="portfolio__img">
+            </a>
+        </div>
+
+    </section> 
+    <p class='elements-start'>&lt;/section&gt;</p>
+    <section class="contacts" id="contacts">
+        <p class='elements-start'>&lt;h1&gt;</p>
+        <h1>Contact me</h1>
+        <p class='elements-end'>&lt;/h1&gt;</p>
+    </section>
+    
     <hr>
     <footer class="footer">
         <a href="mailto:hello@jane.dev" class="footer__link">levan.bakradze3@gmail.com</a>
@@ -113,9 +151,22 @@
                     <i class="fab fa-github"></i>
                 </a>
             </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/L.BAQRA/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
         </ul>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>var types = new Typed(".auto-input" , {
+        strings: ["Levan Bakradze", "Front-end Developer", "Back-end Developer"],
+        startDelay: 700,
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true
+    })</script>
 </body>
 </html>
