@@ -344,6 +344,7 @@ hr {
     background-color: var(--clr-accent);
     height: 1px;
     border: none;
+    margin: 0;
 }
 
 /* Footer */
