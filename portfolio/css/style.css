@@ -37,8 +37,10 @@
 /* General styles */
 
 body {
-    background: #111119;
-    color: var(--clr-dark);
+    background-image:url('../img/foni.png');
+    background-repeat: repeat;
+    /* background-attachment: fixed;   */
+    background-size:initial;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -53,7 +55,7 @@ img {
     display: block;
     max-width: 100%;
 }
-
+a,
 h1,
 h2,
 h3 {
@@ -66,12 +68,10 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-.elements-start{
-    color: #525252;
-}
-
-.elements-end{
-    color: #525252;
+.elements{
+    color: #999999;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* Nav */
@@ -84,9 +84,14 @@ h3 { font-size: var(--fs-h3) }
     float: right;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2px 15px;
     text-decoration: none;
     font-size: 17px;
+  }
+
+  .nav__items{
+    padding-right: 50px;
+    padding-top: 50px;
   }
   
   .nav__link:hover {
@@ -95,6 +100,9 @@ h3 { font-size: var(--fs-h3) }
   
   .nav a.active {
     color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
+    background-color: rgb(17, 38, 41);
+    margin-right: 1px;
   }
 
   .nav-left {
@@ -103,6 +111,11 @@ h3 { font-size: var(--fs-h3) }
 
 .nav__list {
     list-style-type: none;
+}
+
+.home{
+  padding-bottom: 0px;
+  padding-top: 10px
 }
 
 /* Glitch */
@@ -115,6 +128,7 @@ h3 { font-size: var(--fs-h3) }
     font-size: 96px;
     font-family: 'Fira Mono', monospace;
     letter-spacing: -7px;
+    max-width: 40%;
 }
   
   @keyframes glitch{
@@ -173,7 +187,7 @@ h3 { font-size: var(--fs-h3) }
   }
 
 /* Download Resume */
-
+/* 
 .resume-download, .resume-download::after {
     float:right;
     text-decoration: none;
@@ -260,9 +274,34 @@ h3 { font-size: var(--fs-h3) }
       clip-path: var(--slice-1);
       transform: translate(0);
     }
+  } */
+
+  .hi{
+    padding-left: 150px;
+    padding-top: 0px;
   }
 
 /* About me */
+
+.circle {
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-left: 100px; */
+ }
+
+.about-me{
+  padding-top: 0px;
+}
+
+.about-me_content{
+  display: flex;
+  justify-content: space-around;
+}
 
 .about-me__body {
     max-width: 1000px;
@@ -321,7 +360,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .my_work {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark); */
     color: var(--clr-light);
 }
   
@@ -431,18 +470,9 @@ h3 { font-size: var(--fs-h3) }
     opacity: .5;
 }
 
-hr {
-    background-color: var(--clr-accent);
-    height: 1px;
-    border: none;
-    margin: 0;
-}
-
 /* Footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
