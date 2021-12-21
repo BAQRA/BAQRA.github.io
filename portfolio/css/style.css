@@ -45,7 +45,7 @@ body {
     background-image:url('../img/foni.png');
     background-repeat: repeat;
     /* background-attachment: fixed;   */
-    background-size:initial;
+    background-size: initial;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);

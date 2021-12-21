@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  
+  --fw-reg: 300;
+  --fw-bold: 900;
+  
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #000000;
+  --clr-accent-bb: #CF8F2E;
+  
+  --fs-h1: 3rem;
+  --fs-h2: 3rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+      --fs-h1: 4.5rem;
+      --fs-h2: 3.5rem;
+      --fs-h3: 1.5rem;
+      --fs-body: 1.5rem;
+  }
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-attachment: fixed;   */
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+h1,
+h2,
+h3 {
+  line-height: 1;
+  /* margin: 0; */
+  color: var(--clr-accent);
+}
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3); color: white;}
+hr {
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+.elements{
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.nav {
+  overflow: hidden;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(39, 39, 39);
+}
+
+.nav-item{
+  float: right;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.home{
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200%;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  background-color: rgb(17, 38, 41);
+  padding: 15px 16px;
+}
+
+.centered:hover{
+  background-color: rgb(146, 146, 146);
+}
+
+.about{
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.header{
+  text-align: center;
+  color: #cc0000;
+}
+
+.service{
+  background-color: rgb(201, 201, 201);
+  /* background-color: rgba(17,17,25,255); */
+  color: black;
+}
+
+.costumers{
+  background-color: rgb(68, 68, 68);
+}
+
+.contacts {
+  background-color: rgb(117, 117, 117);
+}
+
+.service h3{
+  color: black;
+}
+
+
+.gototpbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: 30px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
