@@ -13,6 +13,7 @@ const startScreenElem = document.querySelector('[data-start-screen]')
 setPixelToWorldScale()
 window.addEventListener("resize", setPixelToWorldScale)
 document.addEventListener("keydown", handelStart, {once:true})
+document.addEventListener("click", handelStart, {once:true})
 
 
 setupGround()
@@ -71,6 +72,7 @@ function handelLose() {
     setDinoLose()
     setTimeout(() => {
         document.addEventListener("keydown", handelStart, { once: true })
+        document.addEventListener("click", handelStart, { once: true })
         startScreenElem.classList.remove("hide")
     }, 100)
 }
