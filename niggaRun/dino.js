@@ -62,8 +62,6 @@ function handleJump(delta) {
 
 function onJump(e) {
     if ( isJumping) {
-        console.log(e)
-        isJumping = false
         return
     }
     yValocity = JUMP_SPEED
