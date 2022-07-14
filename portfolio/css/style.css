@@ -422,6 +422,10 @@ h3 { font-size: var(--fs-h3) }
     text-align: center;    
 }
 
+.resume-download{
+  float: right; 
+}
+
 .section__title {
     margin-bottom: .25em;
     text-align: center;   
@@ -541,4 +545,128 @@ h3 { font-size: var(--fs-h3) }
   border: 1px solid var(--clr-accent);
   text-align: center;
   line-height: 50px;
+}
+.hello{
+  padding: 0;
+}
+.about-me{
+  margin-top: 600px;
+}
+.contacts{
+  text-align: center; 
+  margin-top: 500px;
+}
+@media screen and (max-width: 568px) and (orientation: portrait) {
+  .nav__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .resume-download{
+    float: none;
+    margin-top: 50px;
+    display: block;
+  }
+  .hello{
+    padding: 5em 2em;
+  }
+  .hello a{
+    padding: 0 !important;
+  }
+  .hi{
+    padding-left: 20px;
+  }
+  .about-me{
+    margin-top: 0px;
+  }
+  .about-me > div{
+    margin-left: 0px !important;
+  }
+  .about-me > :nth-child(1) > :nth-child(2) {
+    text-align: center;
+    margin-left: 0px !important;
+   }
+  .about-me > div > :nth-child(3) {
+   float: right;
+  }
+  .about-me_content :nth-child(2) h2{
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .about-me_content :nth-child(2) :nth-child(4){
+    margin-left: 0px !important;
+    text-align: right;
+  }
+  .nav__items{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .work > :nth-child(1){
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+  .work :nth-child(1) :nth-child(3){
+    margin-left: 0px !important;
+    text-align: right;
+  }
+  .work :nth-child(1) :nth-child(2){
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .work > :nth-child(2) h2{
+    margin-top: 100px !important;
+    font-size: 36px !important;
+    margin-left: 0px !important;
+    margin-bottom: 50px;
+  }
+  .about-me_content{
+    display: block;
+  }
+  .my_work{
+    padding: 0;
+  }
+  .my_work > :nth-child(2) h2{
+    font-size: 36px !important;
+  }
+  .portfolio{
+    margin-left: 0px;
+    max-width: none;
+  }
+  .contacts{
+    margin-top: 100px;
+    padding-bottom: 0px;
+  }
+  .contacts :nth-child(2){
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .contacts :nth-child(3){
+    margin-left: 0px !important;
+    text-align: right;
+  }
+  .social-list{
+    flex-direction: column;
+  }
+  .footer{
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .portfolio-column{
+    grid-template-columns:none;
+  }
+  .portfolio-column-r{
+    grid-template-columns:none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:1000px) and (orientation: landscape) {
+
 }
